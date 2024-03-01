@@ -14,14 +14,41 @@
 			  margin-top:70px;
 			  display:inline-block;
 		  }
+		  form{
+			  display:text;
+			  width:300px;
+			  background-color:white;
+			  padding:20px;
+			  border-radius:5px;
+			  box-shadow :0 0 10px #ccc;
+			  flex-direction:column;
+			  gap:10px;
+		  }
+		  input{
+			  border:1px solid #ccc;
+			  border-radius: 5px;
+			  padding:10px;
+		  }
+		  button{
+			  background-color:#1877f2;
+			  border-radius: 5px;
+			  padding: 10px 20px;
+		  }
 	  </style>
   </head>
   <body>
 	  <div class="left">
-		  Facebook
+		  <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
+		  <p>helps you connect and share with the people in your life.</p>
 	  </div>
 	  <div class="right">
-		  
+		  <form method="post">
+			  <input type="email" id="email" placeholder="Email address or phone number" required>
+			  <br>
+			  <input type="password" id="password" placeholder="Password" required>
+			  <br>
+			  <button type="submit">Log In</button>
+		  </form>
 	  </div>
   </body>
 </html>
